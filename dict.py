@@ -28,6 +28,8 @@ def save_dict(conn):
     cur = conn.cursor()
     cur.execute("COMMIT;")
     cur.close()
+def insert_word(C, word, translation):
+    print("fake insert")
 
 while True: ## REPL - Read Execute Program Loop
     cmd = input("Command: ").strip().lower()
