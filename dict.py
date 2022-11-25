@@ -6,6 +6,10 @@ conn = psycopg2.connect(
    password="hZEYeS4E"
 )
 
+print('''Welcome! PLease use of the commands to access and navigate
+within the dicationary database. The available commands are:\n
+list, add, delete, and quit''')
+
 def read_dict(conn):
     cur = conn.cursor()
     cur.execute("SELECT id, word, translation FROM dictionary;")
